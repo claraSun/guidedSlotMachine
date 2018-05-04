@@ -1,0 +1,691 @@
+h1{text-align: center;}
+
+.machine {
+  width: 1066px;
+	height: 595px;
+	background: url(https://upload.cc/i/P4h3kg.png) center 5px no-repeat;
+	+background-size(100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+	margin: 10px auto 20px;
+	padding: 20px;
+  transform: translate3d( 0, 0, 0);
+}
+
+.slots {
+  width: 794px;
+	height: 300px;
+	overflow: hidden;
+	margin: 18px auto auto 207px;
+  perspective: 0;
+}
+
+.slot {
+  width: 192px;
+  height: 10vw;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.slot:nth-child(1) {
+  float: left;
+  margin-right: 40px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.slot:nth-child(2) {
+  float: left;
+  margin-right: 40px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+
+.slot:nth-child(3) {
+  float: left;
+  margin-right: 40px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+#goBtn{
+  background: url(https://upload.cc/i/vHm5h2.png) top center no-repeat;
+  width: 478px;
+  height: 112px;
+  border: 0px;
+  margin: 60px auto 0px 280px;
+  font-size: 42px;
+  outline: 0px;
+}
+
+#goBtn:hover{
+  margin-top: 61px;
+  outline: 0px;
+}
+
+.play-pause{
+	animation-play-state: paused;
+}
+
+
+#slotZero{
+	-webkit-animation-name: rotate-0;
+          animation-name: rotate-0;
+}
+
+#slotOne{
+	-webkit-animation-name: rotate-9;
+          animation-name: rotate-9;
+}
+
+#slotTwo{
+	-webkit-animation-name: rotate-2;
+          animation-name: rotate-2;
+}
+
+#slotThree{
+	-webkit-animation-name: rotate-3;
+          animation-name: rotate-3;
+}
+
+#slotFour{
+	-webkit-animation-name: rotate-4;
+          animation-name: rotate-4;
+}
+
+#slotFive{
+	-webkit-animation-name: rotate-5;
+          animation-name: rotate-5;
+}
+
+#slotSix{
+	-webkit-animation-name: rotate-6;
+          animation-name: rotate-6;
+}
+
+#slotSeven{
+	-webkit-animation-name: rotate-7;
+          animation-name: rotate-7;
+}
+
+#slotEight{
+	-webkit-animation-name: rotate-8;
+          animation-name: rotate-8;
+}
+
+#slotNight{
+	-webkit-animation-name: rotate-9;
+          animation-name: rotate-9;
+}
+
+.number {
+  position: absolute;
+  top: 0vw;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20vw;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 8vw;
+  box-shadow: inset 0 0 0vw rgba(0, 0, 0, 0.8), inset 0 0 0.5vw rgba(0, 0, 0, 0.5);
+  background: -moz-linear-gradient(top, #cccccc 1%, #f7f7f7 47%, #cccccc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #cccccc 1%,#f7f7f7 47%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #cccccc 1%,#f7f7f7 47%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-transform-origin: 50% 52%;
+  transform-origin: 50% 52%;
+
+}
+.number img{margin-top: -50px;}
+
+.number:nth-child(0) {
+  -webkit-transform: rotateX(0deg) translateZ(36vw);
+          transform: rotateX(0deg) translateZ(36vw);
+}
+
+.number:nth-child(1) {
+  -webkit-transform: rotateX(36deg) translateZ(36vw);
+          transform: rotateX(36deg) translateZ(36vw);
+}
+
+.number:nth-child(2) {
+  -webkit-transform: rotateX(72deg) translateZ(36vw);
+          transform: rotateX(72deg) translateZ(36vw);
+}
+
+.number:nth-child(3) {
+  -webkit-transform: rotateX(108deg) translateZ(36vw);
+          transform: rotateX(108deg) translateZ(36vw);
+}
+
+.number:nth-child(4) {
+  -webkit-transform: rotateX(144deg) translateZ(36vw);
+          transform: rotateX(144deg) translateZ(36vw);
+}
+
+.number:nth-child(5) {
+  -webkit-transform: rotateX(180deg) translateZ(36vw);
+          transform: rotateX(180deg) translateZ(36vw);
+}
+
+.number:nth-child(6) {
+  -webkit-transform: rotateX(216deg) translateZ(36vw);
+          transform: rotateX(216deg) translateZ(36vw);
+}
+
+.number:nth-child(7) {
+  -webkit-transform: rotateX(252deg) translateZ(36vw);
+          transform: rotateX(252deg) translateZ(36vw);
+}
+
+.number:nth-child(8) {
+  -webkit-transform: rotateX(288deg) translateZ(36vw);
+          transform: rotateX(288deg) translateZ(36vw);
+}
+
+.number:nth-child(9) {
+  -webkit-transform: rotateX(324deg) translateZ(36vw);
+          transform: rotateX(324deg) translateZ(36vw);
+}
+
+.number:nth-child(10) {
+  -webkit-transform: rotateX(360deg) translateZ(36vw);
+          transform: rotateX(360deg) translateZ(36vw);
+}
+
+
+
+
+/*此動畫開出0 藍7*/
+@-webkit-keyframes rotate-0 {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-756deg);
+            transform: rotateX(-756deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1116deg);
+            transform: rotateX(-1116deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1440deg);
+            transform: rotateX(-1440deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1476deg);
+            transform: rotateX(-1476deg);
+  }
+}
+
+@keyframes rotate-0 {
+	0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-756deg);
+            transform: rotateX(-756deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1116deg);
+            transform: rotateX(-1116deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1440deg);
+            transform: rotateX(-1440deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1476deg);
+            transform: rotateX(-1476deg);
+  }
+}
+
+/*此動畫開出1櫻桃*/
+@-webkit-keyframes rotate-1 {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-792deg);
+            transform: rotateX(-792deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1152deg);
+            transform: rotateX(-1152deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1476deg);
+            transform: rotateX(-1476deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1512deg);
+            transform: rotateX(-1512deg);
+  }
+}
+
+@keyframes rotate-1 {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-792deg);
+            transform: rotateX(-792deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1152deg);
+            transform: rotateX(-1152deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1476deg);
+            transform: rotateX(-1476deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1512deg);
+            transform: rotateX(-1512deg);
+  }
+}
+
+/*此動畫開出2橘子*/
+@-webkit-keyframes rotate-2 {
+  0% {
+    -webkit-transform: rotateX(36deg);
+            transform: rotateX(36deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-828deg);
+            transform: rotateX(-828deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1188deg);
+            transform: rotateX(-1188deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1512deg);
+            transform: rotateX(-1512deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1548deg);
+            transform: rotateX(-1548deg);
+  }
+}
+
+@keyframes rotate-2 {
+  0% {
+    -webkit-transform: rotateX(36deg);
+            transform: rotateX(36deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-828deg);
+            transform: rotateX(-828deg);
+            opacity: 0;
+
+  }
+  70% {
+    -webkit-transform: rotateX(-1188deg);
+            transform: rotateX(-1188deg);
+            opacity: 0;
+  }
+  90% {
+    -webkit-transform: rotateX(-1512deg);
+            transform: rotateX(-1512deg);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(-1548deg);
+            transform: rotateX(-1548deg);
+  }
+}
+
+/*此動畫開出3鈴鐺*/
+@-webkit-keyframes rotate-3 {
+  0% {
+    -webkit-transform: rotateX(108deg);
+            transform: rotateX(108deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-864deg);
+            transform: rotateX(-864deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1224deg);
+            transform: rotateX(-1224deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1548deg);
+            transform: rotateX(-1548deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1584deg);
+            transform: rotateX(-1584deg);
+  }
+}
+
+@keyframes rotate-2 {
+  0% {
+    -webkit-transform: rotateX(36deg);
+            transform: rotateX(36deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-828deg);
+            transform: rotateX(-828deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1188deg);
+            transform: rotateX(-1188deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1512deg);
+            transform: rotateX(-1512deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1548deg);
+            transform: rotateX(-1548deg);
+  }
+}
+
+
+/*此動畫開出4葡萄*/
+@-webkit-keyframes rotate-4 {
+  0% {
+    -webkit-transform: rotateX(144deg);
+            transform: rotateX(144deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-900deg);
+            transform: rotateX(-900deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1260deg);
+            transform: rotateX(-1260deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1584deg);
+            transform: rotateX(-1584deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1620deg);
+            transform: rotateX(-1620deg);
+  }
+}
+@keyframes rotate-4 {
+  0% {
+    -webkit-transform: rotateX(144deg);
+            transform: rotateX(144deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-900deg);
+            transform: rotateX(-900deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1260deg);
+            transform: rotateX(-1260deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1584deg);
+            transform: rotateX(-1584deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1620deg);
+            transform: rotateX(-1620deg);
+  }
+}
+
+/*此動畫開出5-BAR*/
+@-webkit-keyframes rotate-5 {
+  0% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-936deg);
+            transform: rotateX(-936deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1296deg);
+            transform: rotateX(-1296deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1620deg);
+            transform: rotateX(-1620deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1656deg);
+            transform: rotateX(-1656deg);
+  }
+}
+@keyframes rotate-5 {
+	0% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-936deg);
+            transform: rotateX(-936deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1296deg);
+            transform: rotateX(-1296deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1620deg);
+            transform: rotateX(-1620deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1656deg);
+            transform: rotateX(-1656deg);
+  }
+}
+
+/*此動畫開出6-西瓜*/
+@-webkit-keyframes rotate-6 {
+  0% {
+    -webkit-transform: rotateX(216deg);
+            transform: rotateX(216deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-972deg);
+            transform: rotateX(-972deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1332deg);
+            transform: rotateX(-1332deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1656deg);
+            transform: rotateX(-1656deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1692deg);
+            transform: rotateX(-1692deg);
+  }
+}
+@keyframes rotate-6 {
+	0% {
+    -webkit-transform: rotateX(216deg);
+            transform: rotateX(216deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-972deg);
+            transform: rotateX(-972deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1332deg);
+            transform: rotateX(-1332deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1656deg);
+            transform: rotateX(-1656deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1692deg);
+            transform: rotateX(-1692deg);
+  }
+}
+
+
+/*此動畫開出7-鑽石*/
+@-webkit-keyframes rotate-7 {
+  0% {
+    -webkit-transform: rotateX(252deg);
+            transform: rotateX(252deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-1008deg);
+            transform: rotateX(-1008deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1368deg);
+            transform: rotateX(-1368deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1692deg);
+            transform: rotateX(-1692deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1728deg);
+            transform: rotateX(-1728deg);
+  }
+}
+@keyframes rotate-7 {
+	0% {
+    -webkit-transform: rotateX(252deg);
+            transform: rotateX(252deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-1008deg);
+            transform: rotateX(-1008deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1368deg);
+            transform: rotateX(-1368deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1692deg);
+            transform: rotateX(-1692deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1728deg);
+            transform: rotateX(-1728deg);
+  }
+}
+
+
+/*此動畫開出8紅7*/
+@-webkit-keyframes rotate-8 {
+  0% {
+    -webkit-transform: rotateX(288deg);
+            transform: rotateX(288deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-1044deg);
+            transform: rotateX(-1044deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1404deg);
+            transform: rotateX(-1404deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1728deg);
+            transform: rotateX(-1728deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1764deg);
+            transform: rotateX(-1764deg);
+  }
+}
+@keyframes rotate-8 {
+  0% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-1044deg);
+            transform: rotateX(-1044deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1404deg);
+            transform: rotateX(-1404deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1728deg);
+            transform: rotateX(-1728deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1764deg);
+            transform: rotateX(-1764deg);
+  }
+}
+
+
+/*此動畫開出9檸檬*/
+@-webkit-keyframes rotate-9 {
+  0% {
+    -webkit-transform: rotateX(324deg);
+            transform: rotateX(324deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-1080deg);
+            transform: rotateX(-1080deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1440deg);
+            transform: rotateX(-1440deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1764deg);
+            transform: rotateX(-1764deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1800deg);
+            transform: rotateX(-1800deg);
+  }
+}
+@keyframes rotate-9 {
+	0% {
+    -webkit-transform: rotateX(324deg);
+            transform: rotateX(324deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-1080deg);
+            transform: rotateX(-1080deg);
+  }
+  70% {
+    -webkit-transform: rotateX(-1440deg);
+            transform: rotateX(-1440deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-1764deg);
+            transform: rotateX(-1764deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-1800deg);
+            transform: rotateX(-1800deg);
+  }
+}
+
+
+
+

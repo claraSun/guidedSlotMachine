@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>可以自已控制結果的拉霸-slot_machine_control</title>
+  <link rel="stylesheet" href="css/slot.css">
+  
+</head>
+
+<body>
+  <h1>可以自已控制結果的拉霸-slot_machine_control</h1>
+  <div class='machine'>
+    <div class='slots'>
+      <ul class='slot play-pause' id="slotOne">
+        <li class='number'><img src="https://upload.cc/i/xrK3ST.png"></li>
+        <li class='number'><img src="https://upload.cc/i/R9X7wG.png"></li>
+        <li class='number'><img src="https://upload.cc/i/QDUXvf.png"></li>
+        <li class='number'><img src="https://upload.cc/i/hrGdCM.png"></li>
+        <li class='number'><img src="https://upload.cc/i/t1Qyz6.png"></li>
+        <li class='number'><img src="https://upload.cc/i/d3Fcql.png"></li>
+        <li class='number'><img src="https://upload.cc/i/atlcNS.png"></li>
+        <li class='number'><img src="https://upload.cc/i/0fSDPK.png"></li>
+        <li class='number'><img src="https://upload.cc/i/l7QNyF.png"></li>
+        <li class='number'><img src="https://upload.cc/i/eRryLA.png"></li>
+      </ul>
+      <ul class='slot play-pause' id="slotTwo">
+        <li class='number'><img src="https://upload.cc/i/xrK3ST.png"></li>
+        <li class='number'><img src="https://upload.cc/i/R9X7wG.png"></li>
+        <li class='number'><img src="https://upload.cc/i/QDUXvf.png"></li>
+        <li class='number'><img src="https://upload.cc/i/hrGdCM.png"></li>
+        <li class='number'><img src="https://upload.cc/i/t1Qyz6.png"></li>
+        <li class='number'><img src="https://upload.cc/i/d3Fcql.png"></li>
+        <li class='number'><img src="https://upload.cc/i/atlcNS.png"></li>
+        <li class='number'><img src="https://upload.cc/i/0fSDPK.png"></li>
+        <li class='number'><img src="https://upload.cc/i/l7QNyF.png"></li>
+        <li class='number'><img src="https://upload.cc/i/eRryLA.png"></li>
+      </ul>
+      <ul class='slot play-pause' id="slotFour">
+        <li class='number'><img src="https://upload.cc/i/xrK3ST.png"></li>
+        <li class='number'><img src="https://upload.cc/i/R9X7wG.png"></li>
+        <li class='number'><img src="https://upload.cc/i/QDUXvf.png"></li>
+        <li class='number'><img src="https://upload.cc/i/hrGdCM.png"></li>
+        <li class='number'><img src="https://upload.cc/i/t1Qyz6.png"></li>
+        <li class='number'><img src="https://upload.cc/i/d3Fcql.png"></li>
+        <li class='number'><img src="https://upload.cc/i/atlcNS.png"></li>
+        <li class='number'><img src="https://upload.cc/i/0fSDPK.png"></li>
+        <li class='number'><img src="https://upload.cc/i/l7QNyF.png"></li>
+        <li class='number'><img src="https://upload.cc/i/eRryLA.png"></li>
+      </ul>
+    </div>
+    <button type="button" id="goBtn">立刻開搶</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#goBtn").click(function() {
+        $(".slot").toggleClass("play-pause");
+        // slotTwo 可以換成其他會開出其它結果
+        $(".slot").attr("id", "slotTwo")
+      });
+    });
+  </script>
+
+</body>
+
+</html>
